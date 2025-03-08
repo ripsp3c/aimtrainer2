@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Aim Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Aim Trainer</h1>
+        <div id="stats">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time">30</span>s</p>
+            <p>Rank: <span id="rank">Unranked</span></p>
+        </div>
+        <div id="settings">
+            <label>Game Time (s): <input type="number" id="game-time" value="30" min="5" max="120"></label>
+            <label>Target Size (px): <input type="number" id="target-size" value="50" min="20" max="100"></label>
+            <button id="start-btn">Start</button>
+        </div>
+        <div id="game-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
